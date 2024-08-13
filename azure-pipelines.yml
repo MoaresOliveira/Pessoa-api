@@ -6,10 +6,7 @@
 trigger:
 - master
 
-pool:
-  name: 'Default' # Nome do pool configurado no Azure DevOps
-  demands:
-    - agent.name -equals vstsagent.moaresoliveira.Default.DESKTOP-TBIE13C
+pool: Default
 
 steps:
 - task: CmdLine@2
