@@ -12,14 +12,9 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      echo Write your commands here
-      
-      echo Hello world
-      mvn -version
+      cd C:\agent\_work\1\s
+      echo Packaging JAR
       mvn package
-
-      echo Listando arquivos na pasta de trabalho:
-      dir C:\agent\_work\1\s\target
     displayName: 'Run Maven Package'
 - task: PublishBuildArtifacts@1
   inputs:
