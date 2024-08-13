@@ -17,3 +17,8 @@ steps:
       echo Hello world
       mvn -version
       mvn package
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'target'  # Caminho para a pasta onde o .jar é gerado
+    ArtifactName: 'drop'     # Nome do artefato
+    publishLocation: 'Container'
