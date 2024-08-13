@@ -16,3 +16,4 @@ steps:
       
       echo Hello world
       mvn -version
+      mvn package
