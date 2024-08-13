@@ -17,6 +17,7 @@ steps:
       echo Hello world
       mvn -version
       mvn package
+    displayName: 'Run Maven Package'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: 'target'  # Caminho para a pasta onde o .jar é gerado
