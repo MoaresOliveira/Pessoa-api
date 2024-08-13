@@ -7,7 +7,9 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  name: 'Default' # Nome do pool configurado no Azure DevOps
+  demands:
+    - agent.name -equals vstsagent.moaresoliveira.Default.DESKTOP-TBIE13C
 
 steps:
 - task: Maven@3
